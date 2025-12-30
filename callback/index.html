@@ -8,7 +8,8 @@
         window.onload = function() {
             // アプリに戻るためのIntent URL
             // package=com.example.myteslawearapp はログから確認したパッケージ名
-            var intentUrl = "intent://rintaro-ko.github.io/callback#Intent;scheme=https;package=com.example.myteslawearapp;end";
+            // ユーザー指示によりパスに /github.io/ を追加
+            var intentUrl = "intent://rintaro-ko.github.io/github.io/callback#Intent;scheme=https;package=com.example.myteslawearapp;end";
             
             // 自動的にリダイレクトを試みる
             window.location.replace(intentUrl);
@@ -49,7 +50,7 @@
         <h1>認証完了</h1>
         <p>Teslaアカウントの認証が完了しました。<br>アプリに自動的に戻ります。</p>
         <p>もし画面が切り替わらない場合は、下のボタンを押してください。</p>
-        <a href="intent://rintaro-ko.github.io/callback#Intent;scheme=https;package=com.example.myteslawearapp;end" class="button">アプリに戻る</a>
+        <a href="intent://rintaro-ko.github.io/github.io/callback#Intent;scheme=https;package=com.example.myteslawearapp;end" class="button">アプリに戻る</a>
     </div>
 </body>
 </html>
