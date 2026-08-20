@@ -1,0 +1,26 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.myteslawearapp",
+      "sha256_cert_fingerprints": [
+        "09:5A:07:7E:1F:1E:C5:14:F6:DE:CD:31:D3:FE:7A:69:A1:2E:20:27:20:17:32:1C:43:A9:AB:BC:48:A3:55:60"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.myteslawearapp.dev",
+      "sha256_cert_fingerprints": [
+        "09:5A:07:7E:1F:1E:C5:14:F6:DE:CD:31:D3:FE:7A:69:A1:2E:20:27:20:17:32:1C:43:A9:AB:BC:48:A3:55:60"
+      ]
+    }
+  }
+]

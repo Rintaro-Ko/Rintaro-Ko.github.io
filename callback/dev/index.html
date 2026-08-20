@@ -2,12 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Tesla Auth Callback</title>
+    <title>Tesla Auth Callback (Dev)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
     <h1 id="status">認証処理中...</h1>
-    <p>MyTeslaWearAppに戻ってください。</p>
+    <p>MyTesla (Dev) に戻ってください。</p>
     
     <a id="app-link" href="#" 
        style="display: inline-block; padding: 15px 30px; background-color: #e31937; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px;">
@@ -17,8 +17,8 @@
     <script>
         // URLパラメータを取得
         const search = window.location.search;
-        const PACKAGE = "com.example.myteslawearapp";
-        const PATH = "/callback";
+        const PACKAGE = "com.example.myteslawearapp.dev";
+        const PATH = "/callback/dev";
 
         const urlParams = new URLSearchParams(search);
         const code = urlParams.get('code');
