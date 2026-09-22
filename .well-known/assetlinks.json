@@ -7,7 +7,8 @@
       "namespace": "android_app",
       "package_name": "com.example.myteslawearapp",
       "sha256_cert_fingerprints": [
-        "09:5A:07:7E:1F:1E:C5:14:F6:DE:CD:31:D3:FE:7A:69:A1:2E:20:27:20:17:32:1C:43:A9:AB:BC:48:A3:55:60"
+        "09:5A:07:7E:1F:1E:C5:14:F6:DE:CD:31:D3:FE:7A:69:A1:2E:20:27:20:17:32:1C:43:A9:AB:BC:48:A3:55:60",
+        "CC:C6:6A:15:F6:20:D4:FB:08:BF:FE:5A:70:E3:5F:1B:53:72:0C:66:DB:27:B5:9B:AD:19:DA:35:1C:F2:6C:03"
       ]
     }
   },
@@ -19,7 +20,8 @@
       "namespace": "android_app",
       "package_name": "com.example.myteslawearapp.dev",
       "sha256_cert_fingerprints": [
-        "09:5A:07:7E:1F:1E:C5:14:F6:DE:CD:31:D3:FE:7A:69:A1:2E:20:27:20:17:32:1C:43:A9:AB:BC:48:A3:55:60"
+        "09:5A:07:7E:1F:1E:C5:14:F6:DE:CD:31:D3:FE:7A:69:A1:2E:20:27:20:17:32:1C:43:A9:AB:BC:48:A3:55:60",
+        "CC:C6:6A:15:F6:20:D4:FB:08:BF:FE:5A:70:E3:5F:1B:53:72:0C:66:DB:27:B5:9B:AD:19:DA:35:1C:F2:6C:03"
       ]
     }
   }
