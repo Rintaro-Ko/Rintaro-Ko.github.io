@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideVoiceNavi - プライバシーポリシー</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            color: #333;
+            background-color: #fafafa;
+        }
+        h1 { color: #1a1a1a; border-bottom: 2px solid #00D4FF; padding-bottom: 10px; }
+        h2 { color: #1a1a1a; margin-top: 30px; }
+        h3 { color: #444; }
+        table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        .updated { color: #666; font-size: 14px; }
+        .contact { background-color: #f0f8ff; padding: 16px; border-radius: 8px; margin-top: 20px; }
+        @media (prefers-color-scheme: dark) {
+            body { background-color: #1A1A2E; color: #E0E0E0; }
+            h1 { color: #FFFFFF; border-bottom-color: #00D4FF; }
+            h2 { color: #FFFFFF; }
+            h3 { color: #B0B0C0; }
+            th, td { border-color: #3A3A5E; }
+            th { background-color: #2A2A4E; color: #E0E0E0; }
+            a { color: #00D4FF; }
+            .updated { color: #999999; }
+            .contact { background-color: #1E2A3E; color: #E0E0E0; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>RideVoiceNavi プライバシーポリシー</h1>
+<p class="updated">最終更新日: 2026年2月23日</p>
+
+<p>本プライバシーポリシーは、RideVoiceNavi（以下「本アプリ」）における個人情報の取り扱いについて説明します。</p>
+
+<h2>1. 運営者情報</h2>
+<p>
+    開発者: Taro (<a href="https://x.com/Taro_android731" target="_blank">@Taro_android731</a>)<br>
+    連絡先: <a href="mailto:taro.autodev.app@gmail.com">taro.autodev.app@gmail.com</a>
+</p>
+
+<h2>2. 収集する情報</h2>
+
+<h3>2.1 位置情報</h3>
+<p>本アプリは、ナビゲーション機能の提供のため、以下の位置情報を取得します。</p>
+<table>
+    <tr><th>データ</th><th>用途</th><th>保存先</th></tr>
+    <tr><td>GPS位置情報（精密）</td><td>ルート追跡、交差点検知、ルート逸脱検出</td><td>端末内のみ</td></tr>
+    <tr><td>ネットワーク位置情報（大まかな位置）</td><td>GPS補助</td><td>端末内のみ</td></tr>
+</table>
+<p>位置情報はナビゲーション中のみ取得され、ナビゲーション終了後は追跡を停止します。</p>
+<p><strong>匿名化処理:</strong> アプリ改善のための利用状況分析において、位置座標は小数点以下2桁に丸められます（約1.1kmの精度に低下）。これにより、正確な住所や建物を特定することはできません。匿名化された位置情報のみがFirebase Analyticsに送信されます。</p>
+
+<h3>2.2 端末内に保存するデータ</h3>
+<table>
+    <tr><th>データ</th><th>用途</th><th>保存期間</th></tr>
+    <tr><td>目的地の名称・座標</td><td>お気に入り・履歴機能</td><td>ユーザーが削除するまで</td></tr>
+    <tr><td>ルート情報のキャッシュ</td><td>オフラインナビゲーション</td><td>最大7日間（設定で変更可能）</td></tr>
+    <tr><td>ランドマーク情報のキャッシュ</td><td>交差点案内の高速化</td><td>自動期限切れ</td></tr>
+    <tr><td>ランドマーク品質フィードバック</td><td>案内品質の改善</td><td>端末内に永続保存</td></tr>
+    <tr><td>TTS設定（速度・ピッチ）</td><td>音声案内のカスタマイズ</td><td>ユーザーが変更するまで</td></tr>
+    <tr><td>オンボーディング完了状態</td><td>初回セットアップ管理</td><td>永続</td></tr>
+</table>
+<p>上記データはすべて端末内のローカルデータベースに保存され、外部サーバーへの送信は行いません。</p>
+
+<h3>2.3 利用状況の分析データ（Firebase Analytics）</h3>
+<p>本アプリは、機能改善およびユーザー体験の向上を目的として、Google Firebase Analyticsを使用して匿名の利用状況データを収集します。</p>
+<table>
+    <tr><th>収集データ</th><th>用途</th><th>匿名化</th></tr>
+    <tr><td>ナビセッション情報（距離、所要時間、リルート回数）</td><td>ナビゲーション品質の改善</td><td>位置情報は約1.1km精度に匿名化</td></tr>
+    <tr><td>ランドマーク解決率・フィードバック</td><td>ランドマーク案内の品質改善</td><td>種類のみ（名称は送信しない）</td></tr>
+    <tr><td>画面遷移（画面名のみ）</td><td>UX改善</td><td>個人識別情報なし</td></tr>
+    <tr><td>目的地設定元（検索/お気に入り/共有リンク）</td><td>機能利用状況の把握</td><td>匿名化座標のみ</td></tr>
+    <tr><td>TTS設定変更（速度/ピッチ/Bluetooth）</td><td>初期設定の最適化</td><td>設定値のみ</td></tr>
+    <tr><td>お気に入り追加/削除</td><td>機能利用状況の把握</td><td>操作種別のみ</td></tr>
+</table>
+<p><strong>重要:</strong> これらのデータには氏名、メールアドレス、正確な住所などの個人を特定できる情報は一切含まれません。位置座標はすべて匿名化処理（小数点以下2桁に丸め）を行った上で送信されます。Firebase Analyticsの詳細については、<a href="https://policies.google.com/privacy" target="_blank">Googleのプライバシーポリシー</a>をご参照ください。</p>
+
+<h3>2.4 外部APIとの通信</h3>
+<p>本アプリは、以下の外部APIと通信を行います。通信はすべてHTTPSで暗号化されています。</p>
+<table>
+    <tr><th>API</th><th>送信データ</th><th>用途</th></tr>
+    <tr><td>Google Directions API</td><td>出発地・目的地の座標</td><td>ルート検索</td></tr>
+    <tr><td>Google Places API</td><td>交差点の座標</td><td>ランドマーク（店舗・施設）の検索</td></tr>
+    <tr><td>Google Roads API</td><td>GPS座標</td><td>道路へのスナップ（GPS精度補正）</td></tr>
+    <tr><td>OpenStreetMap Overpass API</td><td>交差点の座標</td><td>ランドマーク検索のフォールバック</td></tr>
+    <tr><td>Firebase Analytics</td><td>匿名化された利用状況データ</td><td>アプリの品質改善・分析</td></tr>
+</table>
+<p>これらのAPIへの送信は位置座標のみであり、個人を特定する情報は含まれません。各APIのプライバシーポリシーについては、各サービス提供者のポリシーをご参照ください。</p>
+
+<h3>2.5 収集しない情報</h3>
+<p>本アプリは以下の情報を収集しません。</p>
+<ul>
+    <li>氏名、メールアドレス、電話番号等の個人識別情報</li>
+    <li>アカウント情報（本アプリにアカウント機能はありません）</li>
+    <li>広告識別子</li>
+    <li>デバイスの固有識別子</li>
+    <li>正確な位置情報の外部送信（匿名化処理後のデータのみ送信）</li>
+    <li>写真、連絡先、カレンダー等の端末データ</li>
+</ul>
+
+<h2>3. 情報の第三者提供</h2>
+<p>本アプリは、ユーザーの個人情報を第三者に提供、販売、共有することはありません。</p>
+<p>ただし、以下のサービスに対して匿名化されたデータを送信します。</p>
+<table>
+    <tr><th>提供先</th><th>データ内容</th><th>目的</th></tr>
+    <tr><td>Google（Firebase Analytics）</td><td>匿名化された利用状況データ（位置情報は約1.1km精度に低下）</td><td>アプリの品質改善・分析</td></tr>
+    <tr><td>Google（Directions / Places / Roads API）</td><td>位置座標</td><td>ルート検索・ランドマーク検索</td></tr>
+    <tr><td>OpenStreetMap（Overpass API）</td><td>位置座標</td><td>ランドマーク検索（フォールバック）</td></tr>
+</table>
+<p>いずれの送信データにも、氏名・メールアドレス等の個人を特定できる情報は含まれません。</p>
+
+<h2>4. 広告</h2>
+<p>本アプリには広告は含まれていません。広告SDKは導入しておらず、広告目的でのデータ収集は行いません。</p>
+
+<h2>5. データのセキュリティ</h2>
+<ul>
+    <li>すべてのAPI通信はHTTPS（TLS）で暗号化されています</li>
+    <li>ユーザーデータは端末内のローカルデータベースにのみ保存されます</li>
+    <li>APIキーはビルド時に安全に注入され、アプリ内にハードコードされていません</li>
+    <li>分析データに含まれる位置情報は、送信前に小数点以下2桁に丸める匿名化処理を行い、正確な住所の特定を防止しています</li>
+</ul>
+
+<h2>6. データの削除</h2>
+<p>以下の方法でデータを削除できます。</p>
+<ul>
+    <li><strong>お気に入り・履歴</strong>: アプリ内のお気に入り管理画面から個別に削除</li>
+    <li><strong>オフラインキャッシュ</strong>: 設定画面からキャッシュを削除</li>
+    <li><strong>すべてのデータ</strong>: Android設定 &gt; アプリ &gt; RideVoiceNavi &gt; ストレージ &gt; データを消去</li>
+    <li><strong>完全削除</strong>: アプリをアンインストールすると、すべてのローカルデータが削除されます</li>
+</ul>
+
+<h2>7. 子どものプライバシー</h2>
+<p>本アプリは13歳未満の子どもを対象としていません。13歳未満の方による利用を意図しておらず、13歳未満の方から意図的に個人情報を収集することはありません。</p>
+
+<h2>8. 必要な権限</h2>
+<table>
+    <tr><th>権限</th><th>用途</th><th>必須/任意</th></tr>
+    <tr><td>位置情報（精密・大まかな位置）</td><td>ルート追跡、交差点検知</td><td>必須</td></tr>
+    <tr><td>フォアグラウンドサービス（位置情報）</td><td>バックグラウンドでのナビ継続</td><td>必須</td></tr>
+    <tr><td>通知</td><td>ナビゲーション状態の通知表示</td><td>必須</td></tr>
+    <tr><td>インターネット</td><td>ルート検索、ランドマーク検索</td><td>必須</td></tr>
+    <tr><td>Bluetooth接続</td><td>インカム等への音声出力</td><td>任意</td></tr>
+    <tr><td>バッテリー最適化の除外</td><td>長時間ナビの安定動作</td><td>推奨</td></tr>
+</table>
+
+<h2>9. プライバシーポリシーの変更</h2>
+<p>本プライバシーポリシーは、必要に応じて更新されることがあります。重要な変更がある場合は、アプリ内またはこのページで通知します。変更後のポリシーは、このページに掲載された時点で効力を生じます。</p>
+
+<h2>10. お問い合わせ</h2>
+<div class="contact">
+    <p>本プライバシーポリシーに関するご質問やお問い合わせは、以下までご連絡ください。</p>
+    <p>
+        <strong>開発者:</strong> Taro (<a href="https://x.com/Taro_android731" target="_blank">@Taro_android731</a>)<br>
+        <strong>メール:</strong> <a href="mailto:taro.autodev.app@gmail.com">taro.autodev.app@gmail.com</a>
+    </p>
+</div>
+
+</body>
+</html>
